@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>arcade.terminal - jogos</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div class="scanlines"></div>
+<div class="vignette"></div>
+
+<!-- tela de boot: só visível até a sequência terminar -->
+<div class="boot" id="boot">
+    <div class="boot__lines" id="boot-lines"></div>
+    <span class="boot__cursor"></span>
+</div>
+
+<!-- conteúdo principal: oculto até o boot terminar -->
+<div class="site" id="site" hidden>
+
+    <header class="header">
+        <div class="header__tag">[ arcade.terminal ]</div>
+        <h1 class="header__title">JOGOS</h1>
+        <p class="header__sub">
+            projetos em <span class="hl">JavaScript puro</span> &middot;
+            HTML &middot; CSS &middot; sem frameworks
+        </p>
+        <div class="header__meta">
+            <span class="badge">2 jogos</span>
+            <span class="badge">open source</span>
+        </div>
+    </header>
+
+    <main class="grid" id="game-grid">
+
+        <!-- card: campo minado -->
+        <a class="card" href="#" target="_blank" rel="noopener noreferrer" id="card-minesweeper" aria-label="Jogar Campo Minado">
+            <div class="card__preview" aria-hidden="true">
+                <img
+                    class="card__image"
+                    src="images/image_mines.png"
+                    alt="Prévia do jogo Campo Minado"
+                />
+            </div>
+            <div class="card__body">
+                <div class="card__header-row">
+                    <h2 class="card__title">Campo Minado</h2>
+                    <span class="card__arrow">↗</span>
+                </div>
+                <p class="card__desc">
+                    Revelar todas as células sem detonar nenhuma mina.
+                    Primeiro clique sempre seguro. Revelação em cascata.
+                </p>
+                <ul class="card__features">
+                    <li>3 dificuldades (9×9 → 16×12)</li>
+                    <li>Marcação de bandeiras</li>
+                    <li>Cronômetro e contador</li>
+                    <li>Estatísticas salvas localStorage</li>
+                </ul>
+                <div class="card__footer">
+                    <span class="tech-badge">JS</span>
+                    <span class="tech-badge">HTML</span>
+                    <span class="tech-badge">CSS</span>
+                    <span class="tech-badge">localStorage</span>
+                    <span class="card__play">jogar →</span>
+                </div>
+            </div>
+        </a>
+
+        <!-- card: jogo da memória -->
+        <a class="card" href="#" target="_blank" rel="noopener noreferrer" id="card-memory" aria-label="Jogar Jogo da Memória">
+            <div class="card__preview" aria-hidden="true">
+                <img
+                    class="card__image"
+                    src="images/image_memory.png"
+                    alt="Prévia do Jogo da Memória"
+                />
+            </div>
+            <div class="card__body">
+                <div class="card__header-row">
+                    <h2 class="card__title">Jogo da Memória</h2>
+                    <span class="card__arrow">↗</span>
+                </div>
+                <p class="card__desc">
+                    Encontre todos os pares em menor tempo.
+                    Ranking por dificuldade salvo no navegador.
+                </p>
+                <ul class="card__features">
+                    <li>Ranking com nome do jogador</li>
+                    <li>Cronômetro e placar de jogadas</li>
+                    <li>3 dificuldades (4×4 → 6×10)</li>
+                </ul>
+                <div class="card__footer">
+                    <span class="tech-badge">JS</span>
+                    <span class="tech-badge">HTML</span>
+                    <span class="tech-badge">CSS</span>
+                    <span class="tech-badge">localStorage</span>
+                    <span class="card__play">jogar →</span>
+                </div>
+            </div>
+        </a>
+
+    </main>
+
+    <footer class="footer">
+        <p class="footer__line">
+            <span class="footer__dim">—</span>
+            feito com JavaScript puro
+            <span class="footer__dim">—</span>
+        </p>
+        <a class="footer__github" href="https://github.com/" target="_blank" rel="noopener noreferrer">
+            github ↗
+        </a>
+    </footer>
+
+</div><!-- /site -->
+
+<script src="script.js"></script>
+</body>
+</html>
