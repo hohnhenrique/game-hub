@@ -18,7 +18,6 @@
     // Aplica os links nos cards
     document.getElementById("card-minesweeper").href = GAME_LINKS.minesweeper;
     document.getElementById("card-memory").href      = GAME_LINKS.memory;
-    document.getElementById("card-snake").href       = GAME_LINKS.snake;
 
     // ─── BOOT SEQUENCE ───────────────────────────────────────────────────────
 
@@ -36,12 +35,11 @@
         { text: "detectando módulos de jogo...",          cls: "",          delay: 1400 },
         { text: "  › campo-minado.js      carregado",    cls: "is-amber",  delay: 1650 },
         { text: "  › memory-game.js       carregado",    cls: "is-amber",  delay: 1850 },
-        { text: "  › snake.js             carregado",    cls: "is-amber",  delay: 2050 },
-        { text: "3 módulo(s) prontos.",                   cls: "is-bright", delay: 2300 },
-        { text: "iniciando interface...",                  cls: "",          delay: 2550 },
+        { text: "2 módulo(s) prontos.",                   cls: "is-bright", delay: 2100 },
+        { text: "iniciando interface...",                  cls: "",          delay: 2400 },
     ];
 
-    const TOTAL_BOOT_DURATION = 3050; // ms até revelar o site
+    const TOTAL_BOOT_DURATION = 2900; // ms até revelar o site
 
     // renderiza cada linha no tempo certo
     BOOT_LINES.forEach(({ text, cls, delay }) => {
