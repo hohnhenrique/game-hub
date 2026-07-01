@@ -9,8 +9,8 @@
 
     // ─── CONFIGURE OS LINKS DOS JOGOS AQUI ───────────────────────────────────
     const GAME_LINKS = {
-        minesweeper: "#",   // ex: "https://seu-usuario.github.io/minesweeper"
-        memory:      "#",   // ex: "https://seu-usuario.github.io/memory-game"
+        minesweeper: "https://hohnhenrique.github.io/minesweeper",   // ex: "https://seu-usuario.github.io/minesweeper"
+        memory:      "https://hohnhenrique.github.io/memory-game",   // ex: "https://seu-usuario.github.io/memory-game"
     };
     // ─────────────────────────────────────────────────────────────────────────
 
